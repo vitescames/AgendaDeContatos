@@ -191,7 +191,7 @@ public class ActCadContatos extends AppCompatActivity {
 
         DatePickerDialog date = new DatePickerDialog(this, new SelecionaDataListener(), ano, mes, dia);//o datepicker sera exibido
         //assim, primeiro parametro sendo a actvityr em questão, segundo sera instancia da classe OnDateSetListener
-        date.show(); //mostra o datepicker
+        date.show(); //mostra o datepicke
     }
 
     private class ExibeDataListener implements View.OnFocusChangeListener{ //listener para quando um campo tiver foco
