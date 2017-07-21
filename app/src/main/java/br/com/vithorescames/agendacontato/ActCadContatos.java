@@ -139,12 +139,7 @@ public class ActCadContatos extends AppCompatActivity {
 
         switch (item.getItemId()){
             case R.id.salvar:
-                if(contato == null) {
-                    setDados();
-                }
-                else {
-
-                }
+                setDados();
                 finish();
             break;
 

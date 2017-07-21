@@ -6,6 +6,7 @@ import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.ImageButton;
@@ -15,7 +16,7 @@ import br.com.vithorescames.agendacontato.database.DataBase;
 import br.com.vithorescames.agendacontato.database.RepositorioContato;
 import br.com.vithorescames.agendacontato.database.entidades.Contato;
 
-public class MainActivity extends AppCompatActivity implements View.OnClickListener{
+public class MainActivity extends AppCompatActivity implements View.OnClickListener, AdapterView.OnItemClickListener{
 
     private ImageButton btn;
     private EditText search;
@@ -84,5 +85,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         //o sistema de janelas do android funciona como uma pilha, quando vc está num activity e vai pra outro, o primeiro
         //"fica atrás"
+    }
+
+    @Override
+    public void onItemClick(AdapterView<?> parent, View v, int position, long id){
+
+
     }
 }
